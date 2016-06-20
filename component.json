@@ -1,5 +1,5 @@
 {
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "图片弹窗预览",
     "name": "imgView",
     "main": "index.js",

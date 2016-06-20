@@ -19,9 +19,9 @@ $.fn.extend({
       var maxHeight = height - 50;
       var el = $(e.target);
       var url = el.attr('src') || el.attr('data-src');
-      if (url.indexOf('@') >= 0) {
-        var index = url.search(/@/);
-        url = url.substr(0, index);
+      var imgviewTag = options.imgviewTag || '@';
+      if (url.indexOf(imgviewTag) >= 0) {
+        url = url.substr(0, url.lastIndexOf(imgviewTag));
       }
 
       var opt = $.extend({

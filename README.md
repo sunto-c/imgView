@@ -7,6 +7,7 @@
 
 $('.view').imgView({
   title: '查看范本', // 默认值： view
-  width: 1000 // 默认值： 800
+  width: 1000, // 默认值： 800
+  imgviewTag: '!m' // 默认@
 })
 ```
